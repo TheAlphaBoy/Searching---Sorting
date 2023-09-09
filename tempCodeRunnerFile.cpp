@@ -1,0 +1,1 @@
+else if(arr[mid+1] == target) 

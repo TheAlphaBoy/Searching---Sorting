@@ -135,4 +135,78 @@ int main() {
     return 0;
 }
 */
-//
+// First occurance using in-build fuctions
+/*
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main() {
+    vector<int>v{2,3,3,4,4,4,5,5,5,5,7,8,9};
+    int target = 5;
+    //lower bound ka use karke first occurance nikalte hai
+    auto ans = lower_bound(v.begin() , v.end(),target);
+    cout << "ans is " << ans - v.begin() <<endl;
+    return 0;
+}
+*/
+//  last occurance using in-build fuctions
+/*
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main() {
+    vector<int>v{2, 3, 3, 4, 4, 4, 5, 5, 5, 5, 7, 8, 9};
+    int target = 5;
+    //for last occurance using upper bound
+    auto ans = upper_bound(v.begin(),v.end(),target);
+    //upper bound me 1 index jyada deta hai usko 1 se subtract kar do
+    cout << "ans is : " << (ans - v.begin() ) <<endl;
+    return 0;
+}
+*/
+// Total number of occurance 
+/*
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main() {
+    vector<int>v{2,4,4,4,4,4,4,6,8,10};
+    int target = 4;
+    //last occurance
+    auto ans1 = upper_bound(v.begin(),v.end(),target);
+    //first occurance
+    auto ans2 = lower_bound(v.begin(),v.end(),target);
+    int totalOccurance = ans1 - ans2 ;
+    cout <<"total occurance = " << totalOccurance <<endl;
+    return 0;
+}
+*/
+// Missing Element in a sorted array (increasing order)
+/*
+#include<iostream>
+#include<vector>
+using namespace std;
+int MissingElement (const vector<int>&nums) {
+    int s = 0;
+    int e = nums.size() -1;
+    while ( s<=e) {
+        int mid = s + (e-s)/2;
+        if (nums[mid] != mid+1) {
+            e = mid - 1;
+        }
+        else {
+            s = mid + 1;
+        }
+    }
+    return s+1;
+}
+int main () {
+    vector<int>nums{1,2,3,4,6,7,8,9};
+    int findMissingElement = MissingElement(nums);
+    cout << "Missing Element is : " << findMissingElement <<endl;
+    return 0;
+}
+*/
