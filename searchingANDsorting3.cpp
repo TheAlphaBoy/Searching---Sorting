@@ -165,4 +165,47 @@ int main() {
     return 0;
 }
 */
-//
+// Find the odd occuring element in an array
+/*
+#include<iostream>
+#include<vector>
+using namespace std;
+int find(vector<int>arr) {
+    int s = 0;
+    int e = arr.size()-1;
+    int mid = s+(e-s)/2;
+    while(s <= e) {
+        if ( s == e) {
+            // single element
+            return e;
+        }
+        if(mid%2 == 0) {
+            //mid -> even
+            if(arr[mid] == arr[mid+1]) {
+                s = mid+2;
+            }
+            else {
+                e = mid;
+            }
+        }
+        else {
+            // mid-> odd
+            if(arr[mid] == arr[mid-1]) {
+                s = mid+1;
+            }
+            else {
+                e =mid-1;
+            }
+        }
+        mid = s+(e-s)/2;
+    }
+    return -1;
+}
+int main() {
+    vector<int>arr{2,2,7,7,3,2,2,8,8,1,1,5,5};
+    int ans = find(arr);
+    cout << "Ans is " << arr[ans] <<endl;
+    cout<<"Ans of Index " << ans <<endl;
+    return 0;
+}
+*/
