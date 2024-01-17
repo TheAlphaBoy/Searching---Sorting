@@ -24,10 +24,12 @@ ii) Quick Sort:
 An efficient, divide-and-conquer sorting algorithm that recursively divides an array into smaller sub-arrays.
 Each algorithm is implemented in C++ for clarity and readability. The goal is to provide a resource for learning and understanding these algorithms, and the repository is open to contributions, suggestions, and improvements.
 
-* Contributing
+* Contributing : 
+* 
 Contributions are welcome! If you have ideas for optimizing existing algorithms, adding new ones, or improving documentation, please check out the CONTRIBUTING.md file for guidelines on how to contribute.
 
-*  License
+*  License : 
+  
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
 
 Explore the code, learn from it, and happy coding!
