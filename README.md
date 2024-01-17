@@ -3,13 +3,13 @@
 
 Welcome to the Searching---Sorting repository! This collection of C++ code provides implementations for various searching and sorting algorithms. Whether you're a student looking to understand fundamental algorithms or a developer seeking reliable reference implementations, this repository aims to be a helpful resource.
 
-Searching Algorithms
+* Searching Algorithms : 
 
-* Binary Search:
+i) Binary Search:
 
 A logarithmic search algorithm for finding the position of a target element in a sorted array.
 
-* Linear Search:
+ii) Linear Search:
 
 A basic searching algorithm that sequentially checks each element in a list until a match is found.
 
